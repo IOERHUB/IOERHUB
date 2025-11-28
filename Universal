@@ -1,0 +1,662 @@
+local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
+local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
+ 
+local Window = Fluent:CreateWindow({
+    Title = "Fluent " .. Fluent.Version,
+    SubTitle = "by IOER HUB",
+    TabWidth = 160,
+    Size = UDim2.fromOffset(580, 460),
+    Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
+    Theme = "Darker",
+    MinimizeKey = Enum.KeyCode.LeftControl -- Used when theres no MinimizeKeybind
+})
+ 
+--Fluent provides Lucide Icons https://lucide.dev/icons/ for the tabs, icons are optional
+local Tabs = {
+    Main = Window:AddTab({ Title = "Main", Icon = "airplay" }),
+    Jailbreak = Window:AddTab({ Title = "Jailbreak", Icon = "backpack" }),
+    MVSD = Window:AddTab({ Title = "Murderer Vs Sheriff", Icon = "shield" }),
+    Infection = Window:AddTab({ Title = "Infection Smile", Icon = "podcast" }),
+    Evade = Window:AddTab({ Title = "Evade", Icon = "gauge" }),
+    Area51 = Window:AddTab({ Title = "Area 51", Icon = "gavel" }),
+    Strogest = Window:AddTab({ Title = "The Strongest", Icon = "flame" }),
+    Blade = Window:AddTab({ Title = "Blade Ball", Icon = "aperture" }),
+    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
+}
+ 
+local Options = Fluent.Options
+ 
+do end
+    Fluent:Notify({
+        Title = "Notification",
+        Content = "notification Alert",
+        SubContent = "Thank Your For Use This Script", -- Optional
+        Duration = 5 -- Set to nil to make the notification not disappear
+    })
+ 
+ 
+ 
+    Tabs.Main:AddParagraph({
+        Title = "Intruction",
+        Content = "There are many script options here, the next update will have even more scripts"
+    })
+ 
+    Tabs.Main:AddParagraph({
+        Title = "Update",
+        Content = "All Script In pastebin.com/u/ty4rds"
+    })
+ 
+    Tabs.Jailbreak:AddParagraph({
+        Title = "Warning",
+        Content = "This Script Can Make You Get Kick!"
+    })
+ 
+    Tabs.MVSD:AddParagraph({
+        Title = "Warning",
+        Content = "Some Script Can Make You Get Permanently Banned!"
+    })
+ 
+    Tabs.Infection:AddParagraph({
+        Title = "Warning",
+        Content = "Some Script Can Make You Get Permanently Banned!"
+    })
+ 
+    Tabs.Area51:AddParagraph({
+        Title = "Warning",
+        Content = "Use Executor Support All Script"
+    })
+ 
+    Tabs.Evade:AddParagraph({
+        Title = "Warning",
+        Content = "Use Executor Support All Script"
+    })
+ 
+    Tabs.Strogest:AddParagraph({
+        Title = "Intruction",
+        Content = "All Script Is Working!"
+    })
+ 
+    Tabs.Blade:AddParagraph({
+        Title = "Warning",
+        Content = "Use Executor Support All Script"
+    })
+ 
+ 
+ 
+    Tabs.Main:AddButton({
+        Title = "Infinite yield",
+        Description = "PowerFull Script",
+        Callback = function()
+            Window:Dialog({
+                Title = "Infinite yield",
+                Content = "PowerFull Script",
+                Buttons = {loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+                    {
+                        Title = "Confirm",
+                        Callback = function(v)
+                            print("Next Update,Plase Wait")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function(v)
+                            print("Cancelled,Are You Sure?")
+                        end
+                    }
+                }
+            })
+        end
+    })
+ 
+    Tabs.Area51:AddButton({
+        Title = "Ovepower Script",
+        Description = "Auto Supply, Get All Item and more",
+        Callback = function()
+            Window:Dialog({
+                Title = "Infinite yield",
+                Content = "PowerFull Script",
+                Buttons = {loadstring(game:HttpGet("https://raw.githubusercontent.com/KGuestCheatsJReal/ComeBack/refs/heads/main/Universal"))()
+                    {
+                        Title = "Confirm",
+                        Callback = function(v)
+                            print("Next Update,Plase Wait")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function(v)
+                            print("Cancelled,Are You Sure?")
+                        end
+                    }
+                }
+            })
+        end
+    })
+ 
+    Tabs.Blade:AddButton({
+        Title = "Argon Blade Ball",
+        Description = "Auto Parry, Costum Sword and more",
+        Callback = function()
+            Window:Dialog({
+                Title = "Infinite yield",
+                Content = "PowerFull Script",
+                Buttons = {loadstring(game:HttpGet("https://raw.githubusercontent.com/AgentX771/ArgonHubX/main/Loader.lua"))()
+                    {
+                        Title = "Confirm",
+                        Callback = function(v)
+                            print("Next Update,Plase Wait")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function(v)
+                            print("Cancelled,Are You Sure?")
+                        end
+                    }
+                }
+            })
+        end
+    })
+ 
+    Tabs.Blade:AddButton({
+        Title = "Kaitor Blade Ball",
+        Description = "Auto Parry, Costum Sword and more",
+        Callback = function()
+            Window:Dialog({
+                Title = "Infinite yield",
+                Content = "PowerFull Script",
+                Buttons = {loadstring(game:HttpGet("https://raw.githubusercontent.com/redopy7/Blade-Ball/refs/heads/main/Kalitor"))()
+                    {
+                        Title = "Confirm",
+                        Callback = function(v)
+                            print("Next Update,Plase Wait")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function(v)
+                            print("Cancelled,Are You Sure?")
+                        end
+                    }
+                }
+            })
+        end
+    })
+ 
+    Tabs.Strogest:AddButton({
+        Title = "Trash Can",
+        Description = "Auto Throw Trash Can",
+        Callback = function()
+            Window:Dialog({
+                Title = "Infinite yield",
+                Content = "PowerFull Script",
+                Buttons = {loadstring(game:HttpGet("https://raw.githubusercontent.com/yes1nt/yes/refs/heads/main/Trashcan%20Man",true))()
+                    {
+                        Title = "Confirm",
+                        Callback = function(v)
+                            print("Next Update,Plase Wait")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function(v)
+                            print("Cancelled,Are You Sure?")
+                        end
+                    }
+                }
+            })
+        end
+    })
+ 
+    Tabs.Strogest:AddButton({
+        Title = "Divene Form Emote",
+        Description = "Free Emote",
+        Callback = function()
+            Window:Dialog({
+                Title = "Infinite yield",
+                Content = "PowerFull Script",
+                Buttons = {loadstring(game:HttpGet("https://raw.githubusercontent.com/IdkRandomUsernameok/PublicAssets/refs/heads/main/Releases/MUI.lua"))()
+                    {
+                        Title = "Confirm",
+                        Callback = function(v)
+                            print("Next Update,Plase Wait")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function(v)
+                            print("Cancelled,Are You Sure?")
+                        end
+                    }
+                }
+            })
+        end
+    })
+ 
+    Tabs.Infection:AddButton({
+        Title = "Infection V1",
+        Description = "Auto Keys And More",
+        Callback = function()
+            Window:Dialog({
+                Title = "Infinite yield",
+                Content = "PowerFull Script",
+                Buttons = {loadstring(game:HttpGet(("https://raw.githubusercontent.com/Justaverageguym/Hub/main/Scripts/Infectious%20smile.lua")))()
+                    {
+                        Title = "Confirm",
+                        Callback = function(v)
+                            print("Next Update,Plase Wait")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function(v)
+                            print("Cancelled,Are You Sure?")
+                        end
+                    }
+                }
+            })
+        end
+    })
+ 
+    Tabs.Evade:AddButton({
+        Title = "Best Evade #1",
+        Description = "Esp, Walkspeed and more",
+        Callback = function()
+            Window:Dialog({
+                Title = "Infinite yield",
+                Content = "PowerFull Script",
+                Buttons = {loadstring(game:HttpGet("https://rawscripts.net/raw/Evade-Evade-The-Best-Free-GUI-Script-lots-of-Features-20718"))()
+                    {
+                        Title = "Confirm",
+                        Callback = function(v)
+                            print("Next Update,Plase Wait")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function(v)
+                            print("Cancelled,Are You Sure?")
+                        end
+                    }
+                }
+            })
+        end
+    })
+ 
+    Tabs.Evade:AddButton({
+        Title = "Evade V1",
+        Description = "Esp and more",
+        Callback = function()
+            Window:Dialog({
+                Title = "Infinite yield",
+                Content = "PowerFull Script",
+                Buttons = {loadstring(game:HttpGet("https://raw.githubusercontent.com/Iliankytb/Iliankytb/main/NewbestEvadeCheat"))()
+                    {
+                        Title = "Confirm",
+                        Callback = function(v)
+                            print("Next Update,Plase Wait")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function(v)
+                            print("Cancelled,Are You Sure?")
+                        end
+                    }
+                }
+            })
+        end
+    })
+ 
+    Tabs.Evade:AddButton({
+        Title = "Evade V2",
+        Description = "Esp and more",
+        Callback = function()
+            Window:Dialog({
+                Title = "Infinite yield",
+                Content = "PowerFull Script",
+                Buttons = {loadstring(game:HttpGet('https://raw.githubusercontent.com/kasra50/Idk/refs/heads/main/I%20mean%20nobody%20can%20stop%20me.txt'))()
+                    {
+                        Title = "Confirm",
+                        Callback = function(v)
+                            print("Next Update,Plase Wait")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function(v)
+                            print("Cancelled,Are You Sure?")
+                        end
+                    }
+                }
+            })
+        end
+    })
+ 
+    Tabs.Evade:AddButton({
+        Title = "Evade V3",
+        Description = "Esp and more",
+        Callback = function()
+            Window:Dialog({
+                Title = "Infinite yield",
+                Content = "PowerFull Script",
+                Buttons = {loadstring(game:HttpGet('https://raw.githubusercontent.com/LabyCatUser/rawr/refs/heads/main/evade.lua'))()
+                    {
+                        Title = "Confirm",
+                        Callback = function(v)
+                            print("Next Update,Plase Wait")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function(v)
+                            print("Cancelled,Are You Sure?")
+                        end
+                    }
+                }
+            })
+        end
+    })
+ 
+    Tabs.Infection:AddButton({
+        Title = "Infection V2",
+        Description = "Hitbox And More",
+        Callback = function()
+            Window:Dialog({
+                Title = "Infinite yield",
+                Content = "PowerFull Script",
+                Buttons = {loadstring(game:HttpGet("https://pastebin.com/raw/TqgbdDjF"))()
+                    {
+                        Title = "Confirm",
+                        Callback = function(v)
+                            print("Next Update,Plase Wait")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function(v)
+                            print("Cancelled,Are You Sure?")
+                        end
+                    }
+                }
+            })
+        end
+    })
+ 
+    Tabs.Main:AddButton({
+        Title = "Invisible",
+        Description = "Make You invisible",
+        Callback = function()
+            Window:Dialog({
+                Title = "Next Update,Plase Wait",
+                Content = "Next Update,Plase Wait",
+                Buttons = {loadstring(game:HttpGet('https://pastebin.com/raw/3Rnd9rHf'))()
+ 
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                            print("Next Update,Plase Wait")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+ 
+ 
+Tabs.Main:AddButton({
+        Title = "Click Tp Gui",
+        Description = "Click To Teleport You",
+        Callback = function()
+            Window:Dialog({
+                Title = "Next Update,Plase Wait",
+                Content = "Next Update,Plase Wait",
+                Buttons = {loadstring(game:HttpGet("https://pastebin.com/raw/HZA5Yg8w"))()
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                            print("Next Update,Plase Wait")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+ 
+ 
+Tabs.Main:AddButton({
+        Title = "Vehiclefly",
+        Description = "You Ca Fly With Vehicle",
+        Callback = function()
+            Window:Dialog({
+                Title = "Infinite yield",
+                Content = "PowerFull Script",
+                Buttons = {loadstring(game:HttpGet('https://raw.githubusercontent.com/ScpGuest666/Random-Roblox-script/refs/heads/main/Roblox%20Fe%20Vehicle%20Fly%20GUI%20script'))()
+                    {
+                        Title = "Confirm",
+                        Callback = function(v)
+                            print("Next Update,Plase Wait")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function(v)
+                            print("Cancelled,Are You Sure?")
+                        end
+                    }
+                }
+            })
+        end
+    })
+ 
+Tabs.Main:AddButton({
+        Title = "Free Gamepass",
+        Description = "Work Some Game!",
+        Callback = function()
+            Window:Dialog({
+                Title = "Infinite yield",
+                Content = "PowerFull Script",
+                Buttons = {loadstring(game:HttpGet("https://raw.githubusercontent.com/rndmq/Serverlist/refs/heads/main/Server87"))()
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                            print("Next Update,Plase Wait")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled,Are You Sure?")
+                        end
+                    }
+                }
+            })
+        end
+    })
+ 
+Tabs.Jailbreak:AddButton({
+        Title = "Jailbreak Solix",
+        Description = "Gui And More",
+        Callback = function()
+            Window:Dialog({
+                Title = "Next Update,Plase Wait",
+                Content = "Next Update,Plase Wait",
+                Buttons = {loadstring(game:HttpGet("https://raw.githubusercontent.com/debunked69/Solixreworkkeysystem/refs/heads/main/solix%20new%20keyui.lua"))()
+ 
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                            print("Next Update,Plase Wait")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+ 
+Tabs.Jailbreak:AddButton({
+        Title = "Jailbreak V2",
+        Description = "Gui And More",
+        Callback = function()
+            Window:Dialog({
+                Title = "Next Update,Plase Wait",
+                Content = "Next Update,Plase Wait",
+                Buttons = {loadstring(game:HttpGet("https://raw.githubusercontent.com/ImNotWhyLclc/Rendex/refs/heads/main/Loader.luau"))() 
+ 
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                            print("Next Update,Plase Wait")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+ 
+Tabs.MVSD:AddButton({
+        Title = "Murderer Vs Sheriff V2",
+        Description = "Kill All and more",
+        Callback = function()
+            Window:Dialog({
+                Title = "Next Update,Plase Wait",
+                Content = "Next Update,Plase Wait",
+                Buttons = {loadstring(game:HttpGet("https://raw.githubusercontent.com/TheRealAvrwm/Zephyr-V2/refs/heads/main/ZephyrV2", true))()
+ 
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                            print("Next Update,Plase Wait")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+ 
+Tabs.MVSD:AddButton({
+        Title = "Murderer Vs Sheriff V1",
+        Description = "Kill All, Crash and more",
+        Callback = function()
+            Window:Dialog({
+                Title = "Next Update,Plase Wait",
+                Content = "Next Update,Plase Wait",
+                Buttons = {loadstring(game:HttpGet("https://scripts.projectsnare.net/SnareMvsd", true))()
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                            print("Next Update,Plase Wait")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+ 
+Tabs.Main:AddButton({
+        Title = "Multi Tool",
+        Description = "You Can Use Many Tools At Once",
+        Callback = function()
+            Window:Dialog({
+                Title = "Next Update,Plase Wait",
+                Content = "Next Update,Plase Wait",
+                Buttons = {loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/MultiToolsV1/main/script"))()
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                            print("Next Update,Plase Wait")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+ 
+ 
+-- SaveManager (Allows you to have a configuration system)end
+-- InterfaceManager (Allows you to have a interface managment system)
+ 
+-- Hand the library over to our managers
+SaveManager:SetLibrary(Fluent)
+InterfaceManager:SetLibrary(Fluent)
+ 
+-- Ignore keys that are used by ThemeManager.
+-- (we dont want configs to save themes, do we?)
+SaveManager:IgnoreThemeSettings()
+ 
+-- You can add indexes of elements the save manager should ignore
+SaveManager:SetIgnoreIndexes({})
+ 
+-- use case for doing it this way:
+-- a script hub could have themes in a global folder
+-- and game configs in a separate folder per game
+InterfaceManager:SetFolder("FluentScriptHub")
+SaveManager:SetFolder("FluentScriptHub/specific-game")
+ 
+InterfaceManager:BuildInterfaceSection(Tabs.Settings)
+SaveManager:BuildConfigSection(Tabs.Settings)
+ 
+ 
+Window:SelectTab(1)
+ 
+Fluent:Notify({
+    Title = "Fluent",
+    Content = "The script has been loaded.",
+    Duration = 8
+})
+ 
+-- You can use the SaveManager:LoadAutoloadConfig() to load a config
+-- which has been marked to be one that auto loads!
+SaveManager:LoadAutoloadConfig()
+ 
+function Test()
+    while task.wait() do
+        print("something")
+        if Fluent.Unloaded then break end
+    end
+end
+ 
+coroutine.resume(coroutine.create(Test))
