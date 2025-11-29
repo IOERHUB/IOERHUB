@@ -25,6 +25,7 @@ local Tabs = {
     Night = Window:AddTab({ Title = "99Night", Icon = "bomb" }),
     Sword = Window:AddTab({ Title = "Arsenal", Icon = "factory" }),
     Clicker = Window:AddTab({ Title = "Race Clicker", Icon = "mouse" }),
+    Farm = Window:AddTab({ Title = "Pickaxe", Icon = "package" }),
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
 
@@ -42,7 +43,7 @@ do end
 
     Tabs.Main:AddParagraph({
         Title = "Intruction",
-        Content = "There are many script options here, the next update will have even more scripts"
+        Content = "This script was created by 1 developer! So sorry if there are bugs or anything else."
     })
 
     Tabs.Main:AddParagraph({
@@ -90,6 +91,12 @@ do end
         Content = "Use Executor Support All Script"
     })
 
+    Tabs.Farm:AddParagraph({
+        Title = "Warning",
+        Content = "Use Executor Support All Script"
+    })
+
+
     Tabs.Sword:AddParagraph({
         Title = "Warning",
         Content = "Some Script Can Make You Get Permanently Banned!"
@@ -108,6 +115,31 @@ do end
                 Title = "Infinite yield",
                 Content = "PowerFull Script",
                 Buttons = {loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+                    {
+                        Title = "Confirm",
+                        Callback = function(v)
+                            print("Next Update,Plase Wait")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function(v)
+                            print("Cancelled,Are You Sure?")
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+    Tabs.Main:AddButton({
+        Title = "Anti TP",
+        Description = "After clicking, you can't click anymore but you can fly using the fly script",
+        Callback = function()
+            Window:Dialog({
+                Title = "Infinite yield",
+                Content = "PowerFull Script",
+                Buttons = {loadstring(game:HttpGet("https://raw.githubusercontent.com/IOERHUB/Antitp/refs/heads/main/AntiTp"))()
                     {
                         Title = "Confirm",
                         Callback = function(v)
@@ -612,6 +644,81 @@ do end
                 Title = "Infinite yield",
                 Content = "PowerFull Script",
                 Buttons = {loadstring(game:HttpGet("https://raw.githubusercontent.com/IOERHUB/Nocd/refs/heads/main/Nocd"))()
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                            print("Next Update,Plase Wait")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled,Are You Sure?")
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+    Tabs.Farm:AddButton({
+        Title = "Overpower Script",
+        Description = "Auto Farm And More",
+        Callback = function()
+            Window:Dialog({
+                Title = "Infinite yield",
+                Content = "PowerFull Script",
+                Buttons = {loadstring(game:HttpGet("https://rscripts.net/raw/pickaxe-simulator_1763571487689_CPGt9kskgv.txt",true))()
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                            print("Next Update,Plase Wait")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled,Are You Sure?")
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+    Tabs.Farm:AddButton({
+        Title = "JunkieAPiDevlopment",
+        Description = "Auto Farm And More",
+        Callback = function()
+            Window:Dialog({
+                Title = "Infinite yield",
+                Content = "PowerFull Script",
+                Buttons = {loadstring(game:HttpGet("https://api.junkie-development.de/api/v1/luascripts/public/8397bb3fc906109fe872edd4463510b30d881e75bdc41acfbd6be6c52f404e44/download"))()
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                            print("Next Update,Plase Wait")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled,Are You Sure?")
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+    Tabs.Farm:AddButton({
+        Title = "Auto Farm",
+        Description = "Gui And More",
+        Callback = function()
+            Window:Dialog({
+                Title = "Infinite yield",
+                Content = "PowerFull Script",
+                Buttons = {loadstring(game:HttpGet('https://pastefy.app/oJ1EsI24/raw'))()
                     {
                         Title = "Confirm",
                         Callback = function()
