@@ -23,6 +23,8 @@ local Tabs = {
     Strogest = Window:AddTab({ Title = "The Strongest", Icon = "flame" }),
     Blade = Window:AddTab({ Title = "Blade Ball", Icon = "aperture" }),
     Night = Window:AddTab({ Title = "99Night", Icon = "bomb" }),
+    Sword = Window:AddTab({ Title = "Arsenal", Icon = "factory" }),
+    Clicker = Window:AddTab({ Title = "Race Clicker", Icon = "mouse" }),
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
 
@@ -31,8 +33,8 @@ local Options = Fluent.Options
 do end
     Fluent:Notify({
         Title = "Notification",
-        Content = "notification Alert",
-        SubContent = "Thank Your For Use This Script", -- Optional
+        Content = "Notification Alert",
+        SubContent = "Thank You For Use This Script", -- Optional
         Duration = 5 -- Set to nil to make the notification not disappear
     })
 
@@ -44,13 +46,13 @@ do end
     })
 
     Tabs.Main:AddParagraph({
-        Title = "Update",
-        Content = "All Script In pastebin.com/u/ty4rds"
+        Title = "All Script",
+        Content = "pastebin.com/u/ty4rds"
     })
 
     Tabs.Night:AddParagraph({
         Title = "Warning",
-        Content = "Use Executor 99/100% Sunc"
+        Content = "Use Executor Support All Script"
     })
 
     Tabs.Jailbreak:AddParagraph({
@@ -80,7 +82,7 @@ do end
 
     Tabs.Strogest:AddParagraph({
         Title = "Intruction",
-        Content = "All Script Is Working!"
+        Content = "Use Executor Support All Script"
     })
 
     Tabs.Blade:AddParagraph({
@@ -88,7 +90,15 @@ do end
         Content = "Use Executor Support All Script"
     })
 
+    Tabs.Sword:AddParagraph({
+        Title = "Warning",
+        Content = "Some Script Can Make You Get Permanently Banned!"
+    })
 
+    Tabs.Clicker:AddParagraph({
+        Title = "Warning",
+        Content = "More Script Is Coming"
+    })
 
     Tabs.Main:AddButton({
         Title = "Infinite yield",
@@ -123,6 +133,106 @@ do end
                 Title = "Infinite yield",
                 Content = "PowerFull Script",
                 Buttons = {loadstring(game:HttpGet("https://raw.githubusercontent.com/KGuestCheatsJReal/ComeBack/refs/heads/main/Universal"))()
+                    {
+                        Title = "Confirm",
+                        Callback = function(v)
+                            print("Next Update,Plase Wait")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function(v)
+                            print("Cancelled,Are You Sure?")
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+    Tabs.Clicker:AddButton({
+        Title = "ToraisMe",
+        Description = "Auto Farm",
+        Callback = function()
+            Window:Dialog({
+                Title = "Infinite yield",
+                Content = "PowerFull Script",
+                Buttons = {loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraScript/Script/main/RaceClicker"))()
+                    {
+                        Title = "Confirm",
+                        Callback = function(v)
+                            print("Next Update,Plase Wait")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function(v)
+                            print("Cancelled,Are You Sure?")
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+    Tabs.Clicker:AddButton({
+        Title = "darraghd493 Hub",
+        Description = "Auto Farm and more",
+        Callback = function()
+            Window:Dialog({
+                Title = "Infinite yield",
+                Content = "PowerFull Script",
+                Buttons = {loadstring(game:HttpGet("https://raw.githubusercontent.com/darraghd493/roblox-scripts/main/loader/loader.lua",true))()
+                    {
+                        Title = "Confirm",
+                        Callback = function(v)
+                            print("Next Update,Plase Wait")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function(v)
+                            print("Cancelled,Are You Sure?")
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+    Tabs.Sword:AddButton({
+        Title = "FreeRobloxScripts",
+        Description = " Esp, Aimbot and more",
+        Callback = function()
+            Window:Dialog({
+                Title = "Infinite yield",
+                Content = "PowerFull Script",
+                Buttons = {loadstring(game:HttpGet("https://pastebin.com/raw/gcUsjvks"))()
+                    {
+                        Title = "Confirm",
+                        Callback = function(v)
+                            print("Next Update,Plase Wait")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function(v)
+                            print("Cancelled,Are You Sure?")
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+    Tabs.Sword:AddButton({
+        Title = "Soluna Hub",
+        Description = " Esp, Aimbot and more",
+        Callback = function()
+            Window:Dialog({
+                Title = "Infinite yield",
+                Content = "PowerFull Script",
+                Buttons = {loadstring(game:HttpGet("https://soluna-script.vercel.app/arsenal.lua",true))()
                     {
                         Title = "Confirm",
                         Callback = function(v)
@@ -241,7 +351,7 @@ do end
     })
 
     Tabs.Infection:AddButton({
-        Title = "Infection V1",
+        Title = "Justaverageguym Hub",
         Description = "Auto Keys And More",
         Callback = function()
             Window:Dialog({
@@ -291,7 +401,7 @@ do end
     })
 
     Tabs.Evade:AddButton({
-        Title = "Evade V1",
+        Title = "Iliankytb Hub",
         Description = "Esp and more",
         Callback = function()
             Window:Dialog({
@@ -316,7 +426,7 @@ do end
     })
 
     Tabs.Evade:AddButton({
-        Title = "Evade V2",
+        Title = "kasra50 Hub",
         Description = "Esp and more",
         Callback = function()
             Window:Dialog({
@@ -341,7 +451,7 @@ do end
     })
 
     Tabs.Evade:AddButton({
-        Title = "Evade V3",
+        Title = "LabyCatUser Hub",
         Description = "Esp and more",
         Callback = function()
             Window:Dialog({
@@ -366,7 +476,7 @@ do end
     })
 
     Tabs.Infection:AddButton({
-        Title = "Infection V2",
+        Title = "Infection Gui",
         Description = "Hitbox And More",
         Callback = function()
             Window:Dialog({
@@ -445,7 +555,7 @@ do end
 
     Tabs.Main:AddButton({
         Title = "Vehiclefly",
-        Description = "You Ca Fly With Vehicle",
+        Description = "You Can Fly With Vehicle",
         Callback = function()
             Window:Dialog({
                 Title = "Infinite yield",
@@ -467,6 +577,32 @@ do end
             })
         end
     })
+
+    Tabs.Main:AddButton({
+        Title = "God Mode",
+        Description = "did not suffer any damage",
+        Callback = function()
+            Window:Dialog({
+                Title = "Infinite yield",
+                Content = "PowerFull Script",
+                Buttons = {loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/ignore-touchinterests/main/main",true))()
+                    {
+                        Title = "Confirm",
+                        Callback = function(v)
+                            print("Next Update,Plase Wait")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function(v)
+                            print("Cancelled,Are You Sure?")
+                        end
+                    }
+                }
+            })
+        end
+    })
+
 
     Tabs.Area51:AddButton({
         Title = "No Cooldown",
@@ -571,7 +707,7 @@ do end
     })
 
     Tabs.Jailbreak:AddButton({
-        Title = "Jailbreak V2",
+        Title = "Jailbreak Rendex",
         Description = "Gui And More",
         Callback = function()
             Window:Dialog({
@@ -597,7 +733,7 @@ do end
     })
 
     Tabs.MVSD:AddButton({
-        Title = "Murderer Vs Sheriff V2",
+        Title = "Zephyr-V2",
         Description = "Kill All and more",
         Callback = function()
             Window:Dialog({
@@ -623,7 +759,7 @@ do end
     })
 
     Tabs.MVSD:AddButton({
-        Title = "Murderer Vs Sheriff V1",
+        Title = "ProjectSnare",
         Description = "Kill All, Crash and more",
         Callback = function()
             Window:Dialog({
