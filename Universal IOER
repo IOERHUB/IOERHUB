@@ -1027,11 +1027,5 @@ Fluent:Notify({
 -- which has been marked to be one that auto loads!
 SaveManager:LoadAutoloadConfig()
 
-function Test()
-    while task.wait() do
-        print("Created By IOER Hub")
-        if Fluent.Unloaded then break end
-    end
-end
-
-coroutine.resume(coroutine.create(Test))
+print("Gui loaded Successfully, Thanks for Using this script!")
+print("Created By IOER Hub, pastebin.com/u/ty4rds")
