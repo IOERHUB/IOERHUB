@@ -27,7 +27,7 @@ local Tabs = {
     Clicker = Window:AddTab({ Title = "Race Clicker", Icon = "mouse" }),
     Farm = Window:AddTab({ Title = "Pickaxe", Icon = "package" }),
     Steal = Window:AddTab({ Title = "Steal A Brainrot", Icon = "album" }),
-    Fish = Window:AddTab({ Title = "Fish it", Icon = "cable" }),
+    Fish = Window:AddTab({ Title = "Fish it", Icon = "biohazard" }),
     Blox = Window:AddTab({ Title = "Blox Fruit", Icon = "annoyed" }),
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
