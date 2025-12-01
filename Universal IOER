@@ -26,6 +26,9 @@ local Tabs = {
     Sword = Window:AddTab({ Title = "Arsenal", Icon = "factory" }),
     Clicker = Window:AddTab({ Title = "Race Clicker", Icon = "mouse" }),
     Farm = Window:AddTab({ Title = "Pickaxe", Icon = "package" }),
+    Steal = Window:AddTab({ Title = "Steal A Brainrot", Icon = "album" }),
+    Fish = Window:AddTab({ Title = "Fish it", Icon = "fish" }),
+    Blox = Window:AddTab({ Title = "Blox Fruit", Icon = "shell" }),
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
 
@@ -64,6 +67,21 @@ do end
     Tabs.MVSD:AddParagraph({
         Title = "Warning",
         Content = "Some Script Can Make You Get Permanently Banned!"
+    })
+
+    Tabs.Steal:AddParagraph({
+        Title = "Warning",
+        Content = "Some Script Can Make You Get Kick"
+    })
+
+    Tabs.Blox:AddParagraph({
+        Title = "Warning",
+        Content = "Use Executor Support All Scripts"
+    })
+
+    Tabs.Fish:AddParagraph({
+        Title = "Warning",
+        Content = "Use Executor Support All Scripts"
     })
 
     Tabs.Infection:AddParagraph({
