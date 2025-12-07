@@ -4,7 +4,7 @@ local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.
 
 local Window = Fluent:CreateWindow({
     Title = "Fluent " .. Fluent.Version,
-    SubTitle = "by IOER HUB",
+    SubTitle = "By IOER HUB",
     TabWidth = 160,
     Size = UDim2.fromOffset(580, 460),
     Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
@@ -1570,5 +1570,5 @@ Fluent:Notify({
 -- which has been marked to be one that auto loads!
 SaveManager:LoadAutoloadConfig()
 
-print("Gui loaded Successfully, Thanks for Using this script!")
+print("PREMIUM Version loaded Successfully, Thanks for Using this script!")
 print("Created By IOER Hub, pastebin.com/u/ty4rds")
