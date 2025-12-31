@@ -14,6 +14,7 @@ local Window = Fluent:CreateWindow({
 
 --Fluent provides Lucide Icons https://lucide.dev/icons/ for the tabs, icons are optional
 local Tabs = {
+    Back = Window:AddTab({ Title = "⏪ Back", Icon = "clock" }),
     Main = Window:AddTab({ Title = "Main", Icon = "airplay" }),
     Jailbreak = Window:AddTab({ Title = "Jailbreak", Icon = "backpack" }),
     MVSD = Window:AddTab({ Title = "Murderer Vs Sheriff", Icon = "shield" }),
@@ -149,6 +150,32 @@ do end
             })
         end
     })
+
+    Tabs.Back:AddButton({
+        Title = "<< | Back To Select Scripts",
+        Description = "Click To Back",
+        Callback = function()
+            Window:Dialog({
+                Title = "Infinite yield",
+                Content = "PowerFull Script",
+                Buttons = {loadstring(game:HttpGet("https://raw.githubusercontent.com/IOERHUB/CHOOSE/refs/heads/main/IOERHUB%20CHOOSE"))()
+                    {
+                        Title = "Confirm",
+                        Callback = function(v)
+                            print("Next Update,Plase Wait")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function(v)
+                            print("Cancelled,Are You Sure?")
+                        end
+                    }
+                }
+            })
+        end
+    })
+
 
     Tabs.Main:AddButton({
         Title = "Anti TP",
