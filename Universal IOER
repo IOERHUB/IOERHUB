@@ -176,7 +176,6 @@ do end
         end
     })
 
-
     Tabs.Main:AddButton({
         Title = "Anti TP",
         Description = "After clicking, you can't click anymore but you can fly using the fly script",
